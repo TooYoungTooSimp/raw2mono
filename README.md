@@ -7,6 +7,10 @@ This repository contains two Python scripts designed to convert RAW image files 
 - Multiply the result by a small factor to utilize the 16-bit range effectively.
 - Copy relevant metadata from the original RAW file using **exiftool**.
 
+> **Note on Compatibility**  
+> - **DNG Output**: The resulting DNG files are recognized correctly in [**darktable**](https://www.darktable.org/) and will allow automatic lens detection and lens corrections. However, Adobe software (Lightroom, Photoshop) currently does **not** recognize these monochrome DNG files properly.  
+> - **TIFF Output**: The TIFF files are widely recognized, including by Adobe Lightroom, which will also auto-detect the lens for lens corrections.
+
 ## Table of Contents
 
 1. [Overview of Scripts](#overview-of-scripts)  
